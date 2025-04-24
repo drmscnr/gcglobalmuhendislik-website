@@ -1,34 +1,82 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GC Global Mühendislik</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      padding: 50px;
-      text-align: center;
-    }
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      max-width: 600px;
-      margin: auto;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      color: #333;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GÇ GLOBAL MÜHENDİSLİK | Web Tasarım, Hizmet Tanıtımı ve İletişim" />
+  <title>GÇ GLOBAL MÜHENDİSLİK</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
-<body>
-  <div class="card">
-    <h1>GC Global Mühendislik</h1>
-    <p>Web sitemiz yapım aşamasındadır.</p>
-    <p>İletişim: <a href="mailto:info@gcglobalmuhendislik.com.tr">info@gcglobalmuhendislik.com.tr</a></p>
-  </div>
+<body class="font-sans antialiased bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">GÇ GLOBAL MÜHENDİSLİK</h1>
+      <nav class="space-x-4">
+        <a href="#hakkinda" class="text-gray-700 hover:text-blue-600">Hakkında</a>
+        <a href="#hizmetler" class="text-gray-700 hover:text-blue-600">Hizmetler</a>
+        <a href="#iletisim" class="text-gray-700 hover:text-blue-600">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white py-20 text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-4">Web çözümleriniz için buradayız</h2>
+      <p class="text-lg">Modern, hızlı ve etkili web tasarımı.</p>
+    </div>
+  </section>
+
+  <!-- Hakkında Section -->
+  <section id="hakkinda" class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-6">Hakkında</h3>
+      <p class="max-w-2xl mx-auto">GÇ GLOBAL MÜHENDİSLİK olarak dijital dünyada görünürlüğünüzü artırmak için web çözümleri sunuyoruz. Hedefimiz, sizi ve hizmetlerinizi en iyi şekilde dijital ortamda yansıtmak.</p>
+    </div>
+  </section>
+
+  <!-- Hizmetler Section -->
+  <section id="hizmetler" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-10">Hizmetler</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="font-bold mb-2">Web Tasarım</h4>
+          <p>Responsive ve modern arayüzlerle web siteleri.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="font-bold mb-2">SEO Optimizasyonu</h4>
+          <p>Arama motorlarında üst sıralarda yer alın.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="font-bold mb-2">Bakım & Güncelleme</h4>
+          <p>Web siteniz güncel ve güvenli kalsın.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İletişim Section -->
+  <section id="iletisim" class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-6">İletişim</h3>
+      <p class="mb-6">Aşağıdaki formu doldurarak bize ulaşabilirsiniz.</p>
+      <form name="contact" method="POST" data-netlify="true" class="max-w-xl mx-auto grid gap-4">
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="text" name="isim" placeholder="Adınız" required class="p-3 border rounded" />
+        <input type="email" name="email" placeholder="E-posta" required class="p-3 border rounded" />
+        <textarea name="mesaj" rows="4" placeholder="Mesajınız" required class="p-3 border rounded"></textarea>
+        <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Gönder</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-center py-4">
+    <p>&copy; 2025 GÇ GLOBAL MÜHENDİSLİK. Tüm hakları saklıdır.</p>
+  </footer>
+
 </body>
 </html>
